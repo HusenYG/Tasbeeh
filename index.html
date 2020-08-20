@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tasbeeh Counter</title>
+</head>
+<body>
+  <!-- Showcase -->
+  <div class="showcase">
+  </div>
+
+  <!-- Input Modal -->
+  <div class="input-box" id="input-modal">
+    <label for="Tasbeeh-Name">Tasbeeh</label>
+    <input type="text" id="Tasbeeh-Name" class="fields" placeholder="Tasbeeh Name" >
+    <label for="count">Count Number</label>
+    <input type="text" pattern="\d{1,5}$" id="count" class="fields" placeholder="Number of times " >
+    <button type="submit" class="btn" id="start" onclick="start()">Start</button>
+  </div>
+
+  <div class="title">
+  </div>
+
+  <div class="counter-display">
+    <div class="tasbeeh-times">0</div>
+    <div class="total-count"></div>
+  </div>
+
+  <input type="button" class="counter-button" id="increment" >
+
+  <script src="main.js"></script>
+</body>
+</html>
