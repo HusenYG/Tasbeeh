@@ -26,7 +26,8 @@ increment.addEventListener('click', () =>{
     i=i+1;
   }
   else{
-    i=0
+    i=0;
+    windows.navigator.vibrate(300);
   }
 });
 console.log(count.value);
